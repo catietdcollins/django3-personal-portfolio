@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Alegreya', sans-serif;
+}
+
+
+.picDiv{
+    background-image: url(./pexels-anni-roenkae-3110509.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.navbar-brand .span{
+    color:white !important;
+}
+.navbar-nav .nav-link {
+    color: rgb(4, 4, 4) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(5, 169, 120, 0.5) !important;
+}
+
+
+#blogtitle {
+    font-size: 6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}
