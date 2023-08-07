@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-gjx0%5p6ms3&+h8d3*6f1!82k0d((ye*t8j26h%5@)*6g9j*68
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['catiec6461.pythonanywhere.com']
+=======
+ALLOWED_HOSTS = ['https://catiec6461.pythonanywhere.com/']
+>>>>>>> a0e741c508e4c523d119d0e1bc2d8625aaa9c5c6
 
 
 # Application definition
@@ -129,5 +133,7 @@ MEDIA_ROOT = PurePath.joinpath(BASE_DIR / 'media')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
+try:
+    from .local_settings import *
+except ImportError:
+    print('Looks like no local file. You must be on production')
